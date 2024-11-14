@@ -13,7 +13,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.2",
     "@astrojs/vue": "^4.5.2",
-    "astro": "^4.16.11",
+    "astro": "^4.16.12",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.454.0",
