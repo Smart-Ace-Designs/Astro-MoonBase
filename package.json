@@ -13,8 +13,8 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.2",
     "@astrojs/vue": "^4.5.3",
-    "astro": "^4.16.14",
-    "class-variance-authority": "^0.7.0",
+    "astro": "^4.16.15",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.454.0",
     "radix-vue": "^1.9.10",
@@ -25,7 +25,7 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.9"
   }
