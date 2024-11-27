@@ -82,6 +82,17 @@ function New-AstroMoonbaseProject
 }
 ```
 
+## Add `shadcn-vue` Component
+To add a shadcn-vue component to your project (example: [Alert](https://www.shadcn-vue.com/docs/components/alert.html)):
+### bun
+```sh
+bun x shadcn-vue@latest add alert
+```
+### npm
+```sh
+npx shadcn-vue@latest add alert
+```
+
 ## Project Structure
 
 Inside of your Astro project you will see the following folders and files:
