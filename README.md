@@ -84,6 +84,7 @@ function New-AstroMoonbaseProject
     if ($StartApp) {& $PackageManager run dev}
 }
 ```
+https://github.com/user-attachments/assets/bd6d6186-8f11-4033-a973-3f5ac521ff60
 
 ## Add `shadcn-vue` Component
 To add a shadcn-vue component to your project (example: [Alert](https://www.shadcn-vue.com/docs/components/alert.html)):
