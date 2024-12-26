@@ -19,10 +19,10 @@ The template includes:
 The PowerShell function:
 - Creates an additional empty folder: `Assets`
 - Blanks out the `README.md` file
-- Runs `astro update` to update the core Astro packages to the latest versions and your preferred package manager (npm or bun) to update the other packages
+- Runs `astro update` to update the core Astro packages to the latest versions and runs your preferred package manager (npm or bun) to update the other packages
 - Runs the `prettier` CLI to provide an intial format of all project files
 - Automatically navigates to the project folder and peforms an initial install
-- Provides an option to launch the site post deployment and/or launch the project folder with VS Code
+- Provides an option to launch the site post deployment and/or open the project folder with VS Code
 
 ## Deployment Methods
 > Note:  
