@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -14,11 +15,7 @@ const { title = "Astro" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <style>
-      @view-transition {
-        navigation: auto; /* View Transitions */
-      }
-    </style>
+    <ClientRouter />
   </head>
   <body>
     <slot />
