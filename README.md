@@ -1,6 +1,28 @@
 # Astro Template: Moon Base
 
-An opinionated Astro starter template with built-in support for Vue, shadcn-vue, Tailwind CSS, Prettier, view transitions, and import aliases.
+**Moon Base** is an opinionated Astro starter template with built-in support for Vue, shadcn-vue, Tailwind CSS, Prettier, view transitions, and import aliases.
+
+Using `bunx create-astro@latest` or `npm create astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items plus support for Vue and shadcn-vue. Additionally, a custom PowerShell function was created to deploy this template and provide some additional functionality that the template cannot.
+
+The template includes:
+- Tailwind CSS
+- Prettier
+- Vue
+- shadcn-vue
+- Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
+- Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
+- A default `MainLayout.astro` layout file
+- A default `global.css` file
+- Default `.vscode` files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
+- A starter component to showcase Tailwind CSS
+
+The PowerShell function:
+- Creates an additional empty folder: `Assets`
+- Blanks out the `README.md` file
+- Runs `astro update` to update the core Astro packages to the latest versions and your preferred package manager (npm or bun) to update the other packages
+- Runs the `prettier` CLI to provide an intial format of all project files
+- Automatically navigates to the project folder and peforms an initial install
+- Provides an option to launch the site post deployment and/or launch the project folder with VS Code
 
 ## Deployment Methods
 > Note:  
