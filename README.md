@@ -17,12 +17,12 @@ The template includes:
 - A starter component to showcase Tailwind CSS
 
 The PowerShell function:
-- Creates an additional empty folder: `Assets`
+- Creates an additional empty folder: `assets`
 - Blanks out the `README.md` file
 - Runs `astro update` to update the core Astro packages to the latest versions and runs your preferred package manager (npm or bun) to update the other packages
 - Runs the `prettier` CLI to provide an intial format of all project files
 - Automatically navigates to the project folder and peforms an initial install
-- Provides an option to launch the site post deployment and/or open the project folder with VS Code
+- Provides an option to launch the site and/or open the project folder with VS Code post deployment
 
 ## Deployment Methods
 > Note:  
@@ -151,3 +151,34 @@ Inside of your Astro project you will see the following folders and files:
 └── tsconfig.json
 ```
 
+When deployed with the custom `New-AstroMoonbaseProject` PowerShell function, you will see the following folders and files:
+
+```text
+/
+├── .vscode/
+│       └── extensions.json
+│       └── launch.json
+│       └── settings.json
+├── public/
+│       └── favicon.svg
+├── src/
+|   ├── assets/
+|   ├── components/
+│       └── AstroWelcome.astro
+|   ├── layouts/
+│       └── MainLayout.astro
+|   ├── lib/
+│       └── utils.ts
+│   ├── pages/
+│       └── index.astro
+|   ├── styles/
+│       └── global.css
+├── .gitignore
+├── .prettierrc.mjs
+├── astro.config.mjs
+├── components.json
+├── package.json
+├── README.md
+├── tailwind.config.mjs
+└── tsconfig.json
+```
