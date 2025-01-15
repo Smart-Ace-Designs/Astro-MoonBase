@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.4",
-    "@astrojs/vue": "^5.0.4",
-    "astro": "^5.1.6",
+    "@astrojs/vue": "^5.0.5",
+    "astro": "^5.1.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.454.0",
