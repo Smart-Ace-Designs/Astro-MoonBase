@@ -28,7 +28,7 @@ The PowerShell function:
 
 ## Deployment Methods
 > Note:  
-> Using `bun create` is dependent on `npm` being present in the path. It is recommended to install `Node.js` even if `bun` is used exclusively.
+> Using `bunx create-astro@latest` is dependent on `npm` being present in the path. It is recommended to install `Node.js` even if `Bun` is used exclusively.
 ### bun
 ```sh
 bunx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-name
