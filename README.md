@@ -29,14 +29,11 @@ The PowerShell function:
 > Using `bun create` is dependent on `npm` being present in the path. It is recommended to install `Node.js` even if `bun` is used exclusively.
 ### bun
 ```sh
-bun create astro@latest -- --template smart-ace-designs/astro-moonbase project-name
+bunx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-name
 ```
 ### npm
 ```sh
 npx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-name
-
-# If using Windows PowerShell, the following will also work:
-# npm create astro@latest --- --template smart-ace-designs/astro-space project-name
 ```
 ### PowerShell
 Add this function to your PowerShell profile or a PowerShell module:
