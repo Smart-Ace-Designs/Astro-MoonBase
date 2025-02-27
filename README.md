@@ -37,7 +37,6 @@ bunx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-
 npx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-name
 ```
 ### PowerShell
-> __Bun 1.2.0__ is not currently supported with this function due to compatibility issues between the new text-based _bun.lock_ file and `astro install`.
 
 Add this function to your PowerShell profile or a PowerShell module:
 ```powershell
