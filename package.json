@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^6.0.0",
     "@astrojs/vue": "^5.0.7",
-    "astro": "^5.4.0",
+    "astro": "^5.4.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.475.0",
