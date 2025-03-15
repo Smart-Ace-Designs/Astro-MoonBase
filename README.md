@@ -40,16 +40,25 @@ npx create-astro@latest -- --template smart-ace-designs/astro-moonbase project-n
 
 Add this function to your PowerShell profile or a PowerShell module:
 ```powershell
-function New-AstroMoonbaseProject
+function New-AstroProject
 {
     [CmdletBinding()]
     Param
     (
         [Parameter(Mandatory = $true)] [string]$ProjectName,
         [Parameter(Mandatory = $true)] [string]$Location,
-        [Parameter(Mandatory = $false)] [switch]$StartCode,
+        [Parameter(Mandatory = $true)] [ValidateSet(
+            "astro-major-tom",
+            "astro-moonbase",
+            "astro-space",
+            "astro-starbreeze"
+        )] [string]$Template,
         [Parameter(Mandatory = $false)] [switch]$StartApp,
-        [Parameter(Mandatory = $false)] [ValidateSet("bun", "npm")] [string]$PackageManager = "bun"
+        [Parameter(Mandatory = $false)] [switch]$StartCode,
+        [Parameter(Mandatory = $false)] [ValidateSet(
+            "bun",
+            "npm"
+        )] [string]$PackageManager = "bun"
     )
 
     switch ($PackageManager)
@@ -73,7 +82,7 @@ function New-AstroMoonbaseProject
     }
 
     Set-Location $Location
-    & $PackageManagerX create-astro@latest -- --template smart-ace-designs/astro-moonbase `
+    & $PackageManagerX create-astro@latest -- --template smart-ace-designs/$($Template) `
         --git --no-install $ProjectName
 
     if (!(Test-Path -Path $ProjectName))
@@ -95,7 +104,14 @@ function New-AstroMoonbaseProject
     & $PackageManagerX @astrojs/upgrade
     & $PackageManager update --silent --save
 
-    [void](New-Item -Name "assets" -Path src -ItemType Directory)
+    if (!(Test-Path -Path "src/components"))
+    {
+        [void](New-Item -Name "components" -Path src -ItemType Directory)
+    }
+    if (!(Test-Path -Path "src/assets"))
+    {
+        [void](New-Item -Name "assets" -Path src -ItemType Directory)
+    }
     Clear-Content -Path "README.md"
 
     Write-Host
@@ -107,7 +123,11 @@ function New-AstroMoonbaseProject
     if ($StartApp) {& $PackageManager run dev}
 }
 ```
-https://github.com/user-attachments/assets/de6e6a43-e06d-422c-9153-5a5b3c3f754a
+
+```sh
+New-AstroProject -ProjectName project-name -Location parent-folder -Template astro-moonbase
+```
+https://github.com/user-attachments/assets/6428a409-2763-49ae-a469-793a3b846473
 
 ## Add `shadcn-vue` Component
 To add a shadcn-vue component to your project (example: [Alert](https://www.shadcn-vue.com/docs/components/alert.html)):
