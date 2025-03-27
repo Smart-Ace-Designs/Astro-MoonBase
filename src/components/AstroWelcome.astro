@@ -4,34 +4,35 @@ import { Image } from "astro:assets";
 
 <div class="min-h-screen bg-slate-800 text-white">
   <header class="hidden items-center md:flex">
-    <div class="mx-auto flex w-full max-w-screen-xl">
-      <div class="mx-auto my-8 text-4xl font-light uppercase">
-        <span class="font-semibold text-yellow-600">Astro</span> | <span
-          class="font-semibold text-[#41B883]">Vue</span
-        > | <span class="font-semibold text-sky-400">Tailwind</span>
-      </div>
+    <div class="mx-auto flex w-full max-w-(--breakpoint-xl)">
+      <h1 class="mx-auto my-8 text-4xl font-light uppercase">
+        <span class="font-semibold text-yellow-600">Astro</span> |
+        <span class="font-semibold text-[#41B883]">Vue</span> |
+        <span class="font-semibold text-sky-400">Tailwind</span>
+      </h1>
     </div>
   </header>
-  
-  <div class="flex h-[85vh] flex-col">
+
+  <main class="flex h-[85vh] flex-col">
     <div class="mx-auto mt-32 min-h-44 md:mt-2">
       <Image
-        class="block md:hidden h-60 w-60 md:h-20 md:w-20"
+        class="block h-60 w-60 md:hidden md:h-20 md:w-20"
         src="/favicon.svg"
         alt="astro"
-        height="100"
-        width="100"
+        height="60"
+        width="60"
         loading={"eager"}
       />
     </div>
     <div class="hidden items-center md:flex md:flex-1">
       <div class="mx-auto text-center">
-        <h1 class="text-8xl font-semibold uppercase">
-          Moon<span class="font-semibold text-yellow-600"
-            >{` {`}
+        <h2 class="text-8xl font-semibold uppercase">
+          Moon
+          <span class="font-semibold text-yellow-600">
+            {` {`}
             <span class="inline-block">
               <Image
-                class="h-50 w-50 md:h-20 md:w-20"
+                class="md:h-20 md:w-20"
                 src="/favicon.svg"
                 alt="astro"
                 height="100"
@@ -39,15 +40,14 @@ import { Image } from "astro:assets";
                 loading={"eager"}
               />
             </span>
-            {`} `}</span
-          >Base
-        </h1>
-  
+            {`} `}
+          </span>
+          Base
+        </h2>
         <p class="mt-6 text-3xl font-light">
           Coding in a most <em>peculiar</em> way
         </p>
       </div>
     </div>
-  </div>
+  </main>
 </div>
-
