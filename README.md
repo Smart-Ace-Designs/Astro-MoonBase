@@ -5,7 +5,7 @@
 Using `bunx create-astro@latest` or `npx create-astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items plus support for Vue and shadcn-vue. Additionally, a custom PowerShell function was created to deploy this template and provide some additional functionality that the template cannot.
 
 The template includes:
-- [Tailwind CSS (v3)](https://tailwindcss.com/)
+- [Tailwind CSS v4.0](https://tailwindcss.com/)
 - [Prettier](https://prettier.io/)
 - [Vue](https://vuejs.org/)
 - [shadcn-vue](https://www.shadcn-vue.com/)
@@ -13,6 +13,7 @@ The template includes:
 - Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
 - A default _MainLayout.astro_ layout file
 - A default _global.css_ file
+- A default _components.json_ file with `neutral` base color (used with shadcn-vue)
 - Default _.vscode_ files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
 - A starter component to showcase Tailwind CSS
 - The `dev` script set to `"astro dev --open"`
