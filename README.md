@@ -13,7 +13,7 @@ The template includes:
 - Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
 - A default _MainLayout.astro_ layout file
 - A default _global.css_ file
-- A default _components.json_ file with `neutral` base color (used with shadcn-vue)
+- A default _components.json_ file with `neutral` base color (required by shadcn-vue)
 - Default _.vscode_ files to properly handle Tailwind CSS, recommended extensions, and default Prettier formatters
 - A starter component to showcase Tailwind CSS
 - The `dev` script set to `"astro dev --open"`
