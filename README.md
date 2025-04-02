@@ -134,7 +134,7 @@ https://github.com/user-attachments/assets/6428a409-2763-49ae-a469-793a3b846473
 To add a shadcn-vue component to your project (example: [Alert](https://www.shadcn-vue.com/docs/components/alert.html)):
 ### bun
 ```sh
-bun x shadcn-vue@latest add alert
+bunx shadcn-vue@latest add alert
 ```
 ### npm
 ```sh
