@@ -128,7 +128,7 @@ function New-AstroProject
 ```sh
 New-AstroProject -ProjectName project-name -Location parent-folder -Template astro-moonbase
 ```
-https://github.com/user-attachments/assets/6428a409-2763-49ae-a469-793a3b846473
+https://github.com/user-attachments/assets/8f130bfc-6aab-477d-95cd-7ca8a4a641b8
 
 ## Add `shadcn-vue` Component
 To add a shadcn-vue component to your project (example: [Alert](https://www.shadcn-vue.com/docs/components/alert.html)):
