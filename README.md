@@ -5,7 +5,7 @@
 Using `bunx create-astro@latest` or `npx create-astro@latest` provides everything you need to create a basic Astro application. However, it is missing a few useful items that I found myself manually adding to every Astro project I created.  To address this problem, I created this template to automatically include these items plus support for Vue and shadcn-vue. Additionally, a custom PowerShell function was created to deploy this template and provide some additional functionality that the template cannot.
 
 The template includes:
-- [Tailwind CSS v4.0](https://tailwindcss.com/)
+- [Tailwind CSS v4.1](https://tailwindcss.com/)
 - [Prettier](https://prettier.io/)
 - [Vue](https://vuejs.org/)
 - [shadcn-vue](https://www.shadcn-vue.com/)
@@ -50,6 +50,7 @@ function New-AstroProject
         [Parameter(Mandatory = $true)] [string]$Location,
         [Parameter(Mandatory = $true)] [ValidateSet(
             "astro-major-tom",
+            "astro-marsrover",
             "astro-moonbase",
             "astro-space",
             "astro-starbreeze"
@@ -170,11 +171,10 @@ Inside of your Astro project you will see the following folders and files:
 ├── components.json
 ├── package.json
 ├── README.md
-├── tailwind.config.mjs
 └── tsconfig.json
 ```
 
-When deployed with the custom `New-AstroMoonbaseProject` PowerShell function, you will see the following folders and files:
+When deployed with the custom `New-AstroProject` PowerShell function, you will see the following folders and files:
 
 ```text
 /
@@ -202,6 +202,5 @@ When deployed with the custom `New-AstroMoonbaseProject` PowerShell function, yo
 ├── components.json
 ├── package.json
 ├── README.md
-├── tailwind.config.mjs
 └── tsconfig.json
 ```
