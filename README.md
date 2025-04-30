@@ -89,7 +89,7 @@ After deploying the Astro **Moon Base** template you will see the following file
 └── tsconfig.json
 ```
 
-The optional `New-AstroProject` PowerShell function will add this additional directoru to your project root:
+The optional `New-AstroProject` PowerShell function will add this additional directory to your project root:
 
 ```text
 /
