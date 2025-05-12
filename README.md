@@ -64,21 +64,21 @@ After deploying the Astro **Moon Base** template you will see the following file
 ```text
 /
 ├── .vscode/
-│       └── extensions.json
-│       └── launch.json
-│       └── settings.json
+│   ├── extensions.json
+│   ├── launch.json
+│   └── settings.json
 ├── public/
-│       └── favicon.svg
+│   └── favicon.svg
 ├── src/
-|   ├── components/
-│       └── AstroWelcome.astro
-|   ├── layouts/
-│       └── MainLayout.astro
-|   ├── lib/
-│       └── utils.ts
+│   ├── components/
+│   │   └── AstroWelcome.astro
+│   ├── layouts/
+│   │   └── MainLayout.astro
+│   ├── lib/
+│   │   └── utils.ts
 │   ├── pages/
-│       └── index.astro
-|   ├── styles/
+│   │   └── index.astro
+│   └── styles/
 │       └── global.css
 ├── .gitignore
 ├── .prettierrc.mjs
