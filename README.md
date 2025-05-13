@@ -52,7 +52,7 @@ The optional PowerShell function and module are available here:
 New-AstroProject -ProjectName project-name -Location parent-directory -Template astro-moonbase
 ```
 
-https://github.com/user-attachments/assets/8f130bfc-6aab-477d-95cd-7ca8a4a641b8
+https://github.com/user-attachments/assets/207659dc-8aab-436d-a157-40f51886da55
 
 ## Using [shadcn-vue](https://www.shadcn-vue.com/) Components
 To add a shadcn-vue component to your Astro project for use with a Vue client island:
