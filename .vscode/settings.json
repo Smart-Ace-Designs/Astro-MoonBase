@@ -3,6 +3,7 @@
     "*.css": "tailwindcss",
     "*.scss": "tailwindcss"
   },
+  "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
