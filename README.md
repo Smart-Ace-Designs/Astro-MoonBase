@@ -21,7 +21,6 @@ The template includes:
 
 An optional [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (standalone or as part of a PowerShell module) is available to deploy the above template and provide the following additional functionality:
 - Creates an additional empty folder: _assets_
-- Blanks out the _README.md_ file
 - Runs the `prettier` CLI to provide an intial format of all project files
 - Initializes a _Git_ repository
 - Automatically navigates to the project folder and peforms an initial install
