@@ -14,7 +14,7 @@
     "astro": "^5.13.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.541.0",
+    "lucide-vue-next": "^0.542.0",
     "reka-ui": "^2.4.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.12",
