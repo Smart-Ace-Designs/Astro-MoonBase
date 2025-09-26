@@ -7,7 +7,7 @@ Using `create-astro@latest` provides everything you need to create a basic Astro
 The template includes:
 - An initial Astro project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
-- Astro [Import Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
+- Astro [Aliases](https://docs.astro.build/en/guides/typescript/#import-aliases)
 - [Tailwind CSS v4.1](https://tailwindcss.com/)
 - [Prettier](https://prettier.io/)
 - [Vue](https://vuejs.org/)
