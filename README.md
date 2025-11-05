@@ -97,6 +97,7 @@ After deploying the Astro **Moon Base** template you will see the following file
 │   └── styles/
 │       └── global.css
 ├── .gitignore
+├── .prettierignore
 ├── .prettierrc.mjs
 ├── astro.config.mjs
 ├── components.json
