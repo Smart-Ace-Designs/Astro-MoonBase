@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/vue": "5.1.4",
     "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.13",
+    "astro": "^5.16.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.562.0",
