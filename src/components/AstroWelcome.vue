@@ -22,7 +22,7 @@ const toggleAnimation = (event: MouseEvent) => {
 </script>
 
 <template>
-  <div
+  <main
     role="region"
     aria-label="Welcome section"
     class="min-h-screen bg-slate-800 text-white"
@@ -75,7 +75,7 @@ const toggleAnimation = (event: MouseEvent) => {
         </div>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <style>
