@@ -5,14 +5,8 @@ const launched = ref<boolean>(false);
 const toggleAnimation = (event: MouseEvent) => {
   const button = event.currentTarget as HTMLButtonElement;
   const [addClass, removeClass] = launched.value
-    ? [
-        "animate-[descend_2s_ease-out_forwards]",
-        "animate-[rise_2s_ease-out_forwards]",
-      ]
-    : [
-        "animate-[rise_2s_ease-out_forwards]",
-        "animate-[descend_2s_ease-out_forwards]",
-      ];
+    ? ["animate-[descend_2s_ease-out_forwards]", "animate-[rise_2s_ease-out_forwards]"]
+    : ["animate-[rise_2s_ease-out_forwards]", "animate-[descend_2s_ease-out_forwards]"];
 
   button.classList.add(addClass);
   button.classList.remove(removeClass);
@@ -22,11 +16,7 @@ const toggleAnimation = (event: MouseEvent) => {
 </script>
 
 <template>
-  <main
-    role="region"
-    aria-label="Welcome section"
-    class="min-h-screen bg-slate-800 text-white"
-  >
+  <main role="region" aria-label="Welcome section" class="min-h-screen bg-slate-800 text-white">
     <section aria-label="Hero section" class="hidden items-center md:flex">
       <div class="mx-auto flex w-full max-w-(--breakpoint-xl)">
         <h1 class="mx-auto my-8 text-4xl font-light uppercase">
@@ -39,11 +29,7 @@ const toggleAnimation = (event: MouseEvent) => {
 
     <section aria-label="Content section" class="flex h-[85vh] flex-col">
       <div class="mx-auto mt-32 min-h-44 md:mt-2">
-        <img
-          class="size-60 scheme-light md:hidden"
-          src="/favicon.svg"
-          alt="Astro Logo"
-        />
+        <img class="size-60 md:hidden" src="/favicon.svg" alt="Astro Logo" />
       </div>
       <div class="hidden items-center md:flex md:flex-1">
         <div class="mx-auto text-center">
@@ -58,20 +44,14 @@ const toggleAnimation = (event: MouseEvent) => {
                   class="cursor-pointer rounded-full focus:outline-none"
                   @click="toggleAnimation"
                 >
-                  <img
-                    class="size-[clamp(3.5rem,7vw,5rem)] scheme-light"
-                    src="/favicon.svg"
-                    alt="Astro Logo"
-                  />
+                  <img class="size-[clamp(3.5rem,7vw,5rem)]" src="/favicon.svg" alt="Astro Logo" />
                 </button>
               </span>
               }
             </span>
             Base
           </h2>
-          <p class="my-6 text-3xl font-light">
-            Coding in a most <em>peculiar</em> way
-          </p>
+          <p class="my-6 text-3xl font-light">Coding in a most <em>peculiar</em> way</p>
         </div>
       </div>
     </section>
