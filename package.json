@@ -12,9 +12,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vue": "6.0.0",
+    "@astrojs/vue": "6.0.1",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^6.0.3",
+    "astro": "^6.0.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.577.0",
