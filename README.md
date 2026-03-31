@@ -4,14 +4,14 @@
 
 Astro **Moon Base** is an opinionated Astro 5 starter template with built-in support for Vue, shadcn-vue, Tailwind CSS, Prettier, view transitions, and aliases.
 
-Using `create astro@latest` provides everything you need to create a basic Astro 5 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro project. The **Moon Base** template was created to automatically include these items and the [Vue integration](https://docs.astro.build/en/guides/integrations-guide/vue/) plus a starter `AstroWelcome` component to showcase Tailwind and shadcn-vue. This provides a great starting point with sample code for a new Astro 5 project with Vue client islands, Tailwind and shadcn-vue.
+Using `create astro@latest` provides everything you need to create a basic Astro 6 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro project. The **Moon Base** template was created to automatically include these items and the [Vue integration](https://docs.astro.build/en/guides/integrations-guide/vue/) plus a starter `AstroWelcome` component to showcase Tailwind and shadcn-vue. This provides a great starting point with sample code for a new Astro 5 project with Vue client islands, Tailwind and shadcn-vue.
 
 The template includes:
 
 - An initial Astro project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Aliases](https://docs.astro.build/en/guides/imports/#aliases)
-- [Tailwind CSS v4.1](https://tailwindcss.com/)
+- [Tailwind CSS v4.2](https://tailwindcss.com/)
 - [Prettier](https://prettier.io/)
 - [Vue](https://vuejs.org/)
 - [shadcn-vue](https://www.shadcn-vue.com/)
