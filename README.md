@@ -22,15 +22,6 @@ The template includes:
 - A starter component to showcase Tailwind CSS
 - The `dev` script set to `"astro dev --open"`
 
-An optional [PowerShell function](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff) (standalone or as part of a PowerShell module) is available to deploy the above template and provide the following additional functionality:
-
-- Creates an additional empty folder: _assets_
-- Runs the `prettier` CLI to provide an intial format of all project files
-- Initializes a _Git_ repository
-- Automatically navigates to the project folder and peforms an initial install
-- Runs `astro update` to update the core Astro packages to the latest versions and runs your preferred package manager (npm or bun) to update the other packages
-- Provides an option to launch the site and/or open the project folder with VS Code post deployment
-
 ## Deployment Methods
 
 ### npm
@@ -56,17 +47,6 @@ pnpm create astro@latest --template smart-ace-designs/astro-moonbase project-nam
 ```sh
 yarn create astro@latest --template smart-ace-designs/astro-moonbase project-name
 ```
-
-### PowerShell
-
-The optional PowerShell function and module are available here:
-[SmartAceDesigns.AstroLiftoff](https://github.com/Smart-Ace-Designs/SmartAceDesigns.AstroLiftoff)
-
-```sh
-New-AstroProject -ProjectName project-name -Location parent-directory -Template astro-moonbase
-```
-
-https://github.com/user-attachments/assets/207659dc-8aab-436d-a157-40f51886da55
 
 ## Using [shadcn-vue](https://www.shadcn-vue.com/) Components
 
@@ -104,14 +84,6 @@ After deploying the Astro **Moon Base** template you will see the following file
 ├── package.json
 ├── README.md
 └── tsconfig.json
-```
-
-The optional `New-AstroProject` PowerShell function will add this additional directory to your project root:
-
-```text
-/
-└── src/
-    └── assets/
 ```
 
 <!-- ASTRO:REMOVE:END -->
