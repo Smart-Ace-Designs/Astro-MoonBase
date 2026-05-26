@@ -4,6 +4,5 @@
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "vue.volar"
-  ],
-  "unwantedRecommendations": []
+  ]
 }
