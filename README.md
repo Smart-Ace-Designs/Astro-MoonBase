@@ -2,13 +2,13 @@
 
 # Astro Template: Moon Base
 
-Astro **Moon Base** is an opinionated [Astro 6](https://astro.build/) starter template with built-in support for Vue, shadcn-vue, Tailwind CSS, Prettier, view transitions, and aliases.
+Astro **Moon Base** is an opinionated [Astro 7](https://astro.build/) starter template with built-in support for Vue, shadcn-vue, Tailwind CSS, Prettier, view transitions, and aliases.
 
-Using `create astro@latest` provides everything you need to create a basic Astro 6 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro 6 project. The **Moon Base** template was created to automatically include these items and the [Vue integration](https://docs.astro.build/en/guides/integrations-guide/vue/) plus a starter `AstroWelcome` component to showcase Tailwind and shadcn-vue. This provides a great starting point with sample code for a new Astro 6 project with Vue client islands, Tailwind and shadcn-vue.
+Using `create astro@latest` provides everything you need to create a basic Astro 7 application. However, it is missing a few useful items that you might find yourself manually adding to every new Astro 7 project. The **Moon Base** template was created to automatically include these items and the [Vue integration](https://docs.astro.build/en/guides/integrations-guide/vue/) plus a starter `AstroWelcome` component to showcase Tailwind and shadcn-vue. This provides a great starting point with sample code for a new Astro 7 project with Vue client islands, Tailwind and shadcn-vue.
 
 The template includes:
 
-- An initial Astro 6 project structure
+- An initial Astro 7 project structure
 - Astro [View Transitions](https://docs.astro.build/en/guides/view-transitions/)
 - Astro [Aliases](https://docs.astro.build/en/guides/imports/#aliases)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -79,7 +79,9 @@ After deploying the Astro **Moon Base** template you will see the following file
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.mjs
+├── AGENTS.md
 ├── astro.config.mjs
+├── CLAUDE.md
 ├── components.json
 ├── package.json
 ├── README.md
