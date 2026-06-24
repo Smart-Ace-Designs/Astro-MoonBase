@@ -88,4 +88,7 @@ After deploying the Astro **Moon Base** template you will see the following file
 └── tsconfig.json
 ```
 
+>[!note]
+>The `AGENTS.md` and `CLAUDE.md` files are created automatically by the `create astro@latest` npm initializer and are not part of this template.
+
 <!-- ASTRO:REMOVE:END -->
