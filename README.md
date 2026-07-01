@@ -25,7 +25,7 @@ The template includes:
 ## Deployment Methods
 
 >[!note]
->The `AGENTS.md` and `CLAUDE.md` files are created automatically by the `create astro@latest` npm initializer. Use the `--no-ai` flag to opt out of creating these files.
+>The `AGENTS.md` and `CLAUDE.md` files will be created automatically by the `create astro@latest` npm initializer. Use the `--no-ai` flag to opt out of creating these files.
 
 ### npm
 
