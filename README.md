@@ -70,7 +70,7 @@ After deploying the Astro **Moon Base** template you will see the following file
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── AstroWelcome.astro
+│   │   └── AstroWelcome.vue
 │   ├── layouts/
 │   │   └── MainLayout.astro
 │   ├── lib/
