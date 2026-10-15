@@ -6,5 +6,7 @@
     "*.css": "tailwindcss",
     "*.scss": "tailwindcss"
   },
-  "prettier.documentSelectors": ["**/*.astro"]
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ]
 }
