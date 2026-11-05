@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@astrojs/vue": "^7.1.2",
+    "@lucide/vue": "^1.67.0",
     "@tailwindcss/vite": "^4.3.4",
     "astro": "^7.4.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^1.0.0",
     "reka-ui": "^2.11.0",
     "tailwind-merge": "^3.7.0",
     "tailwindcss": "^4.3.4",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.8.1"
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "^6.0.3"
   }
 }
