@@ -12,8 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vue": "^7.1.2",
-    "@lucide/vue": "^1.70.0",
+    "@astrojs/vue": "^7.1.5",
+    "@lucide/vue": "^1.72.0",
     "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.4.11",
     "class-variance-authority": "^0.7.1",
