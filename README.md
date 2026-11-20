@@ -79,11 +79,11 @@ After deploying the Astro **Moon Base** template you will see the following file
 │       └── global.css
 ├── .gitignore
 ├── .prettierignore
-├── .prettierrc.mjs
 ├── AGENTS.md
 ├── astro.config.mjs
 ├── components.json
 ├── package.json
+├── prettier.config.ts
 ├── README.md
 └── tsconfig.json
 ```
