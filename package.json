@@ -12,10 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vue": "^7.1.5",
-    "@lucide/vue": "^1.72.0",
+    "@astrojs/vue": "^7.1.6",
+    "@lucide/vue": "^1.77.0",
     "@tailwindcss/vite": "^4.3.5",
-    "astro": "^7.4.11",
+    "astro": "^7.4.13",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.5.2",
     "reka-ui": "^2.11.0",
