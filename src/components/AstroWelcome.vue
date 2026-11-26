@@ -2,78 +2,50 @@
 import { ref } from "vue";
 
 const launched = ref<boolean>(false);
-const toggleAnimation = (event: MouseEvent) => {
-  const button = event.currentTarget as HTMLButtonElement;
-  const [addClass, removeClass] = launched.value
-    ? ["animate-[descend_2s_ease-out_forwards]", "animate-[rise_2s_ease-out_forwards]"]
-    : ["animate-[rise_2s_ease-out_forwards]", "animate-[descend_2s_ease-out_forwards]"];
-
-  button.classList.add(addClass);
-  button.classList.remove(removeClass);
-
+const toggleAnimation = () => {
   launched.value = !launched.value;
 };
 </script>
 
 <template>
-  <main role="region" aria-label="Welcome section" class="min-h-screen bg-slate-800 text-white">
-    <section aria-label="Hero section" class="hidden items-center md:flex">
+  <main class="min-h-screen bg-slate-800 text-white">
+    <header class="hidden items-center md:flex">
       <div class="mx-auto flex w-full max-w-(--breakpoint-xl)">
-        <h1 class="mx-auto my-8 text-4xl font-light uppercase">
+        <p class="mx-auto my-8 text-4xl font-light uppercase">
           <span class="font-semibold text-yellow-600">Astro</span> |
           <span class="font-semibold text-[#41B883]">Vue</span> |
           <span class="font-semibold text-sky-400">Tailwind</span>
-        </h1>
+        </p>
       </div>
-    </section>
+    </header>
 
-    <section aria-label="Content section" class="flex h-[85vh] flex-col">
+    <section aria-labelledby="welcome-heading" class="flex h-[85vh] flex-col">
       <div class="mx-auto mt-32 min-h-44 md:mt-2">
         <img class="size-60 md:hidden" src="/favicon.svg" alt="Astro Logo" />
       </div>
       <div class="hidden items-center md:flex md:flex-1">
-        <div class="mx-auto text-center">
-          <h2 class="text-[clamp(4.5rem,8vw,6rem)] font-semibold uppercase">
+        <div class="mx-auto px-4 text-center">
+          <h1 id="welcome-heading" class="text-[clamp(4.5rem,8vw,6rem)] font-semibold uppercase">
             Moon
             <span class="text-yellow-600">
-              {
-              <span class="inline-block">
-                <button
-                  id="launch-button"
-                  aria-label="Launch animation"
-                  class="cursor-pointer rounded-full focus:outline-none"
-                  @click="toggleAnimation"
-                >
-                  <img class="size-[clamp(3.5rem,7vw,5rem)]" src="/favicon.svg" alt="Astro Logo" />
-                </button>
-              </span>
-              }
+              <span aria-hidden="true">{</span>
+              <button
+                type="button"
+                aria-label="Toggle launch animation"
+                :aria-pressed="launched"
+                :class="launched ? 'translate-y-[-300%]' : 'translate-y-0'"
+                class="inline-block cursor-pointer rounded-full transition-transform duration-2000 ease-out focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:translate-y-0 motion-reduce:transition-none"
+                @click="toggleAnimation"
+              >
+                <img class="size-[clamp(3.5rem,7vw,5rem)]" src="/favicon.svg" alt="Astro Logo" />
+              </button>
+              <span aria-hidden="true">}</span>
             </span>
             Base
-          </h2>
+          </h1>
           <p class="my-6 text-3xl font-light">Coding in a most <em>peculiar</em> way</p>
         </div>
       </div>
     </section>
   </main>
 </template>
-
-<style>
-@keyframes rise {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-300%);
-  }
-}
-
-@keyframes descend {
-  0% {
-    transform: translateY(-300%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-</style>
