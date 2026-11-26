@@ -16,5 +16,7 @@
     "ui": "@/components/ui",
     "lib": "@/lib"
   },
-  "iconLibrary": "lucide"
+  "iconLibrary": "lucide",
+  "pointer": false,
+  "rtl": false
 }
